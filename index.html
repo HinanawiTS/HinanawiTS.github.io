@@ -251,6 +251,187 @@
 
 
             <div style = "margin-bottom: 3%; margin-top: 3%">
+
+                <article class="tm-bg-color-6 tm-box-pad tm-mb-1" style = "margin-bottom: 3%; margin-top: 3%">
+                    <details>
+                        <summary style = "cursor: pointer; display: inline"> 
+                            <h2 class = "tm-text-color-1">&#x25B6   Image Classification and Segmentation</h2></summary>      
+                            <h3 class = "tm-text-color-1" style = "margin-bottom: 0%; margin-top: 2.7%">Wildlife Classification with Deep Learning</h3>              
+                            <p class = "tm-mb-0" style = "margin-top: 2%">
+                                
+                                The effectiveness of wildlife preservation relies heavily on in-depth understandings of the diversity and behavior of animals, 
+                                which requires intensive manual labor of experts to correctly label the images. In this project, we constructed a robust deep learning 
+                                model to automate this process through transfer learning with various architectures, 
+                                and improved network structures to better fit our tasks. 
+                                
+                                
+                                <br>We experimented with a number of state-of-the-art deep learning networks, 
+                                benchmarked their performance, improved the best performing network, and visualized its decision making process with Class Activation Map. Trained on a heavily augmented dataset of animals, 
+                                our improved Wide-Resnet50 model achieved an impressive test accuracy of 96.2%, which introduced over 5% improvement over the 
+                                vanilla Wide-ResNet model, with a little extra computational cost. 
+                                 
+                                        
+                                <br><a href = "reports/Wildlife_Classification.pdf" style = "color: #1c78e7; float: right"><b>[Access the report]</b></a> 
+                                <br>
+                                <img src = "img/picture/training_all.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%"}>
+                                <img src = "img/picture/validation_all.png" style = "max-width: 50%; max-height: 50%"}>
+                                <p style = "text-align: center; margin-bottom: 0%">Training Error Curves (left) and Validation Accuracy Curves (right). </p>
+                                <img src = "img/picture/antelope_original.png" style = "max-width: 50%; max-height: 50%;"}>
+                                <img src = "img/picture/antelope_processed.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%; "}>
+                                <img src = "img/picture/squirrel.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%; "}>
+                                <p style = "text-align: center; margin-bottom: 0%">Class Activation Maps. </p>
+
+
+
+                                <h3 class = "tm-text-color-1" style = "margin-bottom: 2%; margin-top: 2%">Image Segmentation: Recycle Bin Detection</h3>
+                                <p class = "tm-mb-0" style = "margin-top: 2%">
+                                In this project I implemented and trained a Gaussian Naive Bayes model from pixel data to distinguish among red, green, 
+                                and blue pixels. Then I utilized the same probabilistic color model to recognize recycling-bin blue color and segment unseen
+                                images into blue regions. Given the blue regions, the algorithm is able to automatically detect blue recycling bins and draw a
+                                bounding box around each detected instance. The model was trained on a small training set of 60 images, and it achieved 50% recall 
+                                and 100% specificity on the 10 images validation set. 
+                                <br><a href = "reports/Recycle_bin_detection.pdf" style = "color: #1c78e7; float: right"><b>[Access the report]</b></a> 
+                                </p>
+                                <br>
+                                <img src = "img/picture/001.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%"}>
+                                <img src = "img/picture/20.png" style = "max-width: 50%; max-height: 50%"}>
+                                <img src = "img/picture/10.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%; "}>
+                                <p style = "text-align: center; margin-bottom: 0%">Detection Results (left) and Segmented Images (right). </p>
+                            </p>
+                    </details>
+                </article>
+
+
+
+
+                <article class="tm-bg-color-6 tm-box-pad tm-mb-1" style = "margin-bottom: 3%; margin-top: 3%">
+                    <details>
+                        <summary style = "cursor: pointer; display: inline"> 
+                            <h2 class = "tm-text-color-1">&#x25B6   Data Analysis and Interactive Visualization</h2></summary>      
+                            <h3 class = "tm-text-color-1" style = "margin-bottom: 0%; margin-top: 2.7%">New York City Airbnb: Find Your Dream House</h3>              
+                            <p class = "tm-mb-0" style = "margin-top: 2%">
+                                
+                                
+
+
+                                The housing rental market in New York City is gradually recovering after a rough time during the pandemic. 
+                                The economy in NYC also revives with the reopening of restaurants, the growth of tourism, and the rapid rising of housing 
+                                rentals. It is crucial for travelers, long-term tenants, and landlords to understand the housing rental trend in NYC and locate 
+                                their desired offers, either to stay for a few nights or to optimize the pricing strategy for their own properties.             
+                                In this project, we developed a Flask-based website for analyzing and visualizing Airbnb rental trends in NYC, featuring user-friendly interactive 
+                                visualizations built with Bokeh, and full documentation for transparency and extensibility. 
+                                        
+                                <br><a href = "https://github.com/HinanawiTS/NYC-Airbnb-Trends-Analysis" style = "color: #1c78e7; float: right"><b>[Project Repository]</b></a> 
+                                <br><br>
+                                
+                                <video width = "100%" height = "100%" controls>
+                                    <source src="img/picture/NYC_Airbnb_Website.mp4" type="video/mp4">
+                                    Your browser does not support the video tag, to watch the demo please visit our Github repository.
+                                </video>
+                                <p style = "text-align: center; margin-bottom: 0%">Website Demo (The AWS Server Hosting the Website is No Longer Available). </p>
+
+
+
+                                <h3 class = "tm-text-color-1" style = "margin-bottom: 2%; margin-top: 5%">Indoor Airborne Infection Risk Estimator</h3>
+                                <p class = "tm-mb-0" style = "margin-top: 2%">
+                                    Supervised by Professor Rajesh Gupta, we developed an indoor airborne COVID - 19 infection risk estimation website 
+                                    which features convenient interactive visualization for fast comparison, with great transparency and extensibility, 
+                                    while maintaining the ease of use. The website has a Python Dash backend, and the visualization was created using JS and Highchart. 
+                                <br><a href = "https://hinanawits.github.io/DSC-180B-Presentation-Website/" style = "color: #1c78e7; float: right"><b>[Visit the Website]</b></a> 
+                                </p>
+                                <br>
+                                
+
+                                <img src = "img/picture/estimator.png" style = "max-width: 70%; max-height: 70%; margin-top: 2%; "}>
+                                <img src = "img/picture/estimator1.png" style = "max-width: 70%; max-height: 70%;"}>  
+
+
+
+                                <h3 class = "tm-text-color-1" style = "margin-bottom: 2%; margin-top: 5%">STEM Labor Market Analysis (EDA) </h3>
+                                <p class = "tm-mb-0" style = "margin-top: 2%">
+                                    In this project I explore a STEM jobs dataset collected from 2017 to 2021. I analyze the distribution of STEM job opportunities 
+                                    and income, and how they relate to different levels of education, years of experience, and locations. I also preprocess data and
+                                    select features based on the data analysis. In the end I use several machine learning models to predict the income given features 
+                                    selected and analyzed during the data analysis process, and compare their performance. 
+
+                                <br><a href = "reports/Labor_Analysis.pdf" style = "color: #1c78e7; float: right"><b>[Access the Report]</b></a>   
+                                </p>
+                                <br>
+                                <img src = "img/picture/fs1.png" style = "max-width: 45%; max-height: 45%; margin-top: 2%; "}>
+                                <img src = "img/picture/fsfs.png" style = "max-width: 28%; max-height: 28%; margin-top: 2%; "}>
+
+
+
+
+
+                                <p style = "text-align: center; margin-bottom: 0%">Distribution of Education Level (left) and Years of Experience vs. Average Income (right)</p>
+                                <img src = "img/picture/fslog.png" style = "max-width: 28%; max-height: 28%; margin-top: 2%; "}>
+                                <img src = "img/picture/logmp.png" style = "max-width: 45%; max-height: 45%; margin-top: 2%; "}>
+                                <p style = "text-align: center; margin-bottom: 0%">Log Distribution of Annual Income (left) and Log Annual Income by States (right) </p>
+                                <img src = "img/picture/mse.png" style = "max-width: 28%; max-height: 28%; margin-top: 2%; "}>
+                                <img src = "img/picture/mae.png" style = "max-width: 28%; max-height: 28%; margin-top: 2%; "}>
+                                <p style = "text-align: center; margin-bottom: 0%">MSE (left) and MAE (right) of Different Untuned Models </p>
+                            </p>
+
+
+                    </details>
+                </article>
+
+                <article class="tm-bg-color-6 tm-box-pad tm-mb-1" style = "margin-bottom: 3%; margin-top: 3%">
+                    <details>
+                        <summary style = "cursor: pointer; display: inline"> 
+                            <h2 class = "tm-text-color-1">&#x25B6  Autonomous Driving, Simultaneous Localization and Mapping (SLAM) </h2></summary>  
+                            
+                            
+                            
+                            <h3 class = "tm-text-color-1" style = "margin-bottom: 2%; margin-top: 2.7%">ROS Gazebo Simulator Environment for Autonomous Racecars</h3>
+                            <p class = "tm-mb-0" style = "margin-top: 2%">
+                                Internship at <a href = "http://erl.ucsd.edu/" style = "color: #1c78e7"><b>Existential Robotics Laboratory</b></a>, a partner of the 
+                                <a href = "https://contextualrobotics.ucsd.edu/" style = "color: #1c78e7"><b>Contextual Robotics Institute</b></a> at UC San Diego. 
+                                Supervised by Professor Nikolay Atanasov, working as a member of the Racecar team. We 
+
+                            <br><a href = "reports/Visual_inertial.pdf" style = "color: #1c78e7; float: right"><b>[Access the report]</b></a> 
+                            </p>
+                            <br>
+                            <img src = "img/picture/V0.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%"}>
+                            <img src = "img/picture/V1.png" style = "max-width: 50%; max-height: 50%"}>
+                            <p style = "text-align: center; margin-bottom: 0%">Mapping Results using 10% of Total Features. </p>
+                            <h3 class = "tm-text-color-1" style = "margin-bottom: 2%; margin-top: 2%">Visual Inertial SLAM</h3>
+                            <p class = "tm-mb-0" style = "margin-top: 2%">
+                                In this project, I implement an EKF prediction step based on SE(3) kinematics with IMU
+                                measurements and an EKF update step based on the stereo-camera observation model
+                                with feature observations to perform localization and mapping. Then I combine the IMU
+                                prediction with the landmark update and implement an IMU update step based on the
+                                stereo-camera observation model to obtain a complete visual-inertial SLAM algorithm.
+
+                                I deploy the algorithm on an autonomous vehicle dataset to create a map of vehicle
+                                trajectory and landmarks.
+
+                            <br><a href = "reports/Visual_inertial.pdf" style = "color: #1c78e7; float: right"><b>[Access the report]</b></a> 
+                            </p>
+                            <br>
+                            <img src = "img/picture/V0.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%"}>
+                            <img src = "img/picture/V1.png" style = "max-width: 50%; max-height: 50%"}>
+
+                            <p style = "text-align: center; margin-bottom: 0%">Mapping Results using 10% of Total Features. </p>
+
+                            <h3 class = "tm-text-color-1" style = "margin-bottom: 2%; margin-top: 2%">Particle Filter SLAM</h3>              
+                            <p class = "tm-mb-0" style = "margin-top: 2%">
+
+                                In this project, I implement a particle filter with a differential-drive motion model and scan-grid
+                                correlation observation model for simultaneous localization and occupancy-grid mapping, using odometry, 2-D LiDAR scans,
+                                and stereo camera measurements from an autonomous car. 
+
+                                <br><a href = "reports/Particle_filter.pdf" style = "color: #1c78e7; float: right"><b>[Access the report]</b></a> 
+                                <br>
+                                <img src = "img/picture/tra.png" style = "max-width:39.9%; max-height: 39.9%; margin-top: 2%"}>
+                                <img src = "img/picture/map.png" style = "max-width: 39.9%; max-height: 39.9%"}>
+
+                                <p style = "text-align: center; margin-bottom: 0%">Estimated Trajectory (left) and Occupancy Map (right). </p>
+                            </p>
+                    </details>
+                </article>
+
                 <article class="tm-bg-color-6 tm-box-pad tm-mb-1" style = "margin-bottom: 3%; margin-top: 3%">
                     <details>
                         <summary style = "cursor: pointer; display: inline"> 
@@ -284,9 +465,14 @@
         
                         
                             <p class = "tm-mb-0" style = "margin-top: 2%">
-                                An online COVID – 19 infection risk estimator which features interactive visualization, great transparency and 
-                                extensibility. I built the entire frontend of the website, and the 
-                                majority of its backend which is a dash-based Python application. 
+                                Wildlife conservation is an essential part of environment protection, a diverse wildlife provides
+balance and stability to the ecosystem. Modern wildlife management requires in-depth understanding
+about the behavior and diversity of different animals in the habitat, usually through sensors and
+cameras. Traditionally, such insights were produced by human experts who manually label and
+study those images. But with more cameras installed, manually labeling that large amount of images
+generated everyday becomes extremely expensive and sometimes infeasible. Therefore, it’s important
+to automate the classification process.
+
                                 <a href = "https://hinanawits.github.io/DSC-180B-Presentation-Website/" style = "color: #1c78e7"><b>Visit the website. </b></a>
     
                                 <img src = "img/picture/estimator.png" style = "max-width: 50%; max-height: 50%; margin-top: 2%; "}>
